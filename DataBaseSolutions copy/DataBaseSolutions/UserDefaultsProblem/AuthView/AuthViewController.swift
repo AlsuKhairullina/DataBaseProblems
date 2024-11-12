@@ -102,9 +102,15 @@ final class AuthViewController: UIViewController {
         super.viewDidLoad()
         setupBindings()
         setupUI()
+        setupCredentials()
         addActions()
         setAppTheme()
 
+    }
+    
+    private func setupCredentials() {
+        storedNameLabel.text = viewModel.getCredentials().0
+        storedEmailLabel.text = viewModel.getCredentials().1
     }
 
     private func setupUI() {
@@ -161,7 +167,7 @@ private extension AuthViewController {
 
     private func addActions() {
         let saveAction = UIAction { _ in
-    
+            self.viewModel.saveCredentials(name: self.storedNameLabel.text!, email: self.storedEmailLabel.text!)
         }
         saveButton.addAction(saveAction, for: .primaryActionTriggered)
 

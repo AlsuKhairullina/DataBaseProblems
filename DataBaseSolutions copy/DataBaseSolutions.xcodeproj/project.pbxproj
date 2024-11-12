@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148FA9C72CE36DFF0053E8D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148FA9C62CE36DFF0053E8D2 /* User.swift */; };
 		9E50E0802B29781400DFC361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E07F2B29781400DFC361 /* AppDelegate.swift */; };
 		9E50E0822B29781400DFC361 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E0812B29781400DFC361 /* SceneDelegate.swift */; };
 		9E50E0842B29781400DFC361 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E50E0832B29781400DFC361 /* AuthViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		148FA9C62CE36DFF0053E8D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9E50E07C2B29781400DFC361 /* DataBaseSolutions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataBaseSolutions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E50E07F2B29781400DFC361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E50E0812B29781400DFC361 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				9E50E0832B29781400DFC361 /* AuthViewController.swift */,
 				9E50E0942B297A3B00DFC361 /* AuthViewModel.swift */,
+				148FA9C62CE36DFF0053E8D2 /* User.swift */,
 			);
 			path = AuthView;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148FA9C72CE36DFF0053E8D2 /* User.swift in Sources */,
 				9E50E0A42B29C60900DFC361 /* String+Extensions.swift in Sources */,
 				9E50E0952B297A3B00DFC361 /* AuthViewModel.swift in Sources */,
 				9E50E0842B29781400DFC361 /* AuthViewController.swift in Sources */,

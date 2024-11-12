@@ -15,6 +15,8 @@ final class AuthViewModel: ObservableObject {
 
     @Published var usernameTextColor: UIColor?
     @Published var emailTextColor: UIColor?
+    
+    private let dataManager = UserDefaultsManager()
 
     init() {
        formIsValidPublisher
@@ -27,6 +29,14 @@ final class AuthViewModel: ObservableObject {
         emailIsValidPublisher
             .mapToFieldInputColor()
             .assign(to: &$emailTextColor)
+    }
+    
+    func saveCredentials(name: String, email: String) {
+        dataManager.saveCredentials(name: name, email: email)
+    }
+    
+    func getCredentials() -> (String, String) {
+        return dataManager.getCredentials()
     }
 
     private var usernameIsValidPublisher: some Publisher<Bool, Never> {
